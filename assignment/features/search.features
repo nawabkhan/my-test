@@ -1,0 +1,9 @@
+Feature:
+	'Open Google, search for “J. P. Morgan”, click the first result returned by Google, verify that the J.P. Morgan logo is shown'		
+
+Scenario:
+	Given I have open Google url "https://www.google.com/"
+	When I add "J. P. Morgan" to the search box
+	And click the Search Button
+	And click the first result returned by Google 
+	Then I verify that the "J.P. Morgan logo" is shown
